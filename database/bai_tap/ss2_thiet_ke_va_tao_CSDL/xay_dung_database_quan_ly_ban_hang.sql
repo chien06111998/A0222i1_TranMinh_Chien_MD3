@@ -14,7 +14,7 @@ create table order_manager (
 	foreign key(order_total_price) references order_detail(order_id)
 );
 create table order_detail (
-	order_id int,
+	order_id int auto_increment primary key,
     product_id int,
     order_detail_qty int
 );
