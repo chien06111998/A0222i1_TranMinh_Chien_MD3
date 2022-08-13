@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: "Times New Roman";
+}
+header, footer {
+    padding: 10px;
+    color: white;
+    background-color: black;
+}
+#head {
+    font-size: 40px;
+}
+nav ul li {
+    display: inline;
+    margin: 15px;
+}
+#content{
+    display: flex;
+}
+p {
+    text-indent: 35px;
+}
+#left{
+    flex: 65%;
+    padding: 20px;
+}
+#right{
+    flex: 35%;
+    padding: 20px;
+}
+

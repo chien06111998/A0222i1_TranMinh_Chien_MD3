@@ -1,0 +1,38 @@
+body {
+    font-family: "Times New Roman";
+}
+
+p {
+    font-size: 20px;
+}
+
+div {
+    text-overflow: clip;
+    font-size: 20px;
+    text-indent: 35px;
+    word-wrap: break-word;
+}
+
+h2 {
+    color: red;
+    font-size: 30px;
+}
+
+span.test1 {
+    font-weight: bold;
+}
+
+span.test2 {
+    color: aqua;
+}
+
+span.test3 {
+    color: dodgerblue;
+}
+
+sup {
+    font-size: 10px;
+}
+sub {
+    font-size: 10px;
+}
