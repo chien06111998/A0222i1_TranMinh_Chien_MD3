@@ -97,15 +97,15 @@ public class customerReponcitoryImpl implements iCustomerReponcitory {
         boolean check;
         try (Connection connection = BaseReponsitory.getConnectDB();
              PreparedStatement preparedStatement = connection.prepareStatement(UPDATE_CUSTOMER_SQL)){
-            preparedStatement.setString(1, customer.getName());
+            preparedStatement.setString(1,customer.getName());
             preparedStatement.setDate(2, Date.valueOf(customer.getBirthday()));
-            preparedStatement.setString(3, customer.getGender());
-            preparedStatement.setString(4, customer.getIdCard());
-            preparedStatement.setString(5, customer.getPhoneNumber());
-            preparedStatement.setString(6, customer.getEmail());
-            preparedStatement.setInt(7, customer.getCustomerTypeID());
-            preparedStatement.setString(8, customer.getAddress());
-            preparedStatement.setInt(9, customer.getId());
+            preparedStatement.setString(3,customer.getGender());
+            preparedStatement.setString(4,customer.getIdCard());
+            preparedStatement.setString(5,customer.getPhoneNumber());
+            preparedStatement.setString(6,customer.getEmail());
+            preparedStatement.setInt(7,customer.getCustomerTypeID());
+            preparedStatement.setString(8,customer.getAddress());
+            preparedStatement.setInt(9,customer.getId());
             check = preparedStatement.executeUpdate() > 0;
         }
         return check;

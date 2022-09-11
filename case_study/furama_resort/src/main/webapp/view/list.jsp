@@ -48,33 +48,46 @@
                     <td><c:out value="${customer.idCard}"/></td>
                     <td><c:out value="${customer.phoneNumber}"/></td>
                     <td><c:out value="${customer.email}"/></td>
+<%--                    <c:forEach var="customerType" items="${customerTypeList}">--%>
+<%--                        <c:if test="${customer.customerTypeID == customerType.idCustomerType}">--%>
+<%--                            <td><c:out value="${customerType.nameCustomerType}"/></td>--%>
+<%--                        </c:if>--%>
+<%--                    </c:forEach>--%>
                     <td><c:out value="${customer.customerTypeID}"/></td>
                     <td><c:out value="${customer.address}"/></td>
+
                     <td><button type="button"><a href="/resort?action=update&id=${customer.id}">Edit</a></button></td>
-                    <td><button type="button" onclick="deleteInfo('${customer.id}','${customer.name}')" data-bs-toggle="modal" data-bs-target="#exampleModal">Delete</button></td>
+                    <td><button type="button" onclick="deleteInfo('${customer.id}','${customer.name}')" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                        Delete
+                    </button></td>
+
                 </tr>
             </c:forEach>
         </tbody>
     </table>
+
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <form action="/resort" method="post">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Delete Customer</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <input hidden name="deleteId" id="deleteId">
-                        <input hidden name="action" value="delete">
-                        <span>Do you want delete </span><span id="deleteName"></span><span>?</span>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
-                        <button type="submit" class="btn btn-primary">Yes</button>
-                    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <form action="/resort?action=delete" method="post">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
+                <div class="modal-body">
+                    <input hidden name="deleteId" id="deleteId">
+                    <input hidden name="action" value="delete">
+                    <span>Do you want delete </span><span id="deleteName"></span><span>?</span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Yes</button>
+                </div>
+            </div>
             </form>
         </div>
     </div>

@@ -76,7 +76,7 @@
                 </tr><tr>
                     <th>Customer Type:</th>
                     <td>
-                        <input type="text" name="customerTypeID" size="45"
+                        <input type="text" name="customerTypeId" size="45"
                                value="<c:out value='${customerList.customerTypeID}' />"
                         />
                     </td>

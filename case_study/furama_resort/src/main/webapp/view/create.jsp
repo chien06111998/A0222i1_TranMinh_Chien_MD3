@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: PC
@@ -68,6 +69,14 @@
                     </td>
                 </tr>
                 <tr>
+                    <th>Customer type Id:</th>
+<%--                    <td>--%>
+<%--                        <select name="customerTypeId">--%>
+<%--                            <c:forEach var="customerType" items="${customerTypeList}">--%>
+<%--                                <option value="${customerType.idCustomerType}">${customerType.nameCustomerType}</option>--%>
+<%--                            </c:forEach>--%>
+<%--                        </select>--%>
+<%--                    </td>--%>
                     <th>Customer type Id:</th>
                     <td>
                         <input type="text" name="customerTypeId" id="customerTypeId" size="15"/>

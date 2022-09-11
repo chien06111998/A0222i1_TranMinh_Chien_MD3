@@ -1,8 +1,11 @@
 package controller;
 
 import model.Customer;
+import model.CustomerType;
 import service.iCustomerService;
+import service.iCustomerTypeService;
 import service.impl.customerServiceImpl;
+import service.impl.customerTypeServiceImpl;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -12,11 +15,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 @WebServlet(name = "Furama_Servlet", urlPatterns = "/resort")
 public class Furama_Servlet extends HttpServlet {
     private iCustomerService customerService = new customerServiceImpl();
+//    private iCustomerTypeService customerTypeService = new customerTypeServiceImpl();
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String action =request.getParameter("action");
@@ -68,14 +74,17 @@ public class Furama_Servlet extends HttpServlet {
         String idCard = request.getParameter("idCard");
         String phoneNumber = request.getParameter("phoneNumber");
         String email = request.getParameter("email");
-        int customerTypeId = Integer.parseInt(request.getParameter("customerTypeID"));
+        int customerTypeId = Integer.parseInt(request.getParameter("customerTypeId"));
         String address = request.getParameter("address");
         Customer customer = new Customer(id, name, birthDay, gender, idCard, phoneNumber, email, customerTypeId, address);
+        System.out.println(customer);
         try {
             customerService.update(customer);
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
+
+
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("view/update.jsp");
         try {
             requestDispatcher.forward(request, response);
@@ -129,6 +138,7 @@ public class Furama_Servlet extends HttpServlet {
     private void showList(HttpServletRequest request, HttpServletResponse response) {
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("view/list.jsp");
         request.setAttribute("customerList", this.customerService.selectAll());
+//        request.setAttribute("customerTypeList", this.customerTypeService.selectAll());
         try {
             requestDispatcher.forward(request, response);
         } catch (ServletException e) {
@@ -153,6 +163,8 @@ public class Furama_Servlet extends HttpServlet {
     }
 
     private void showFormCreate(HttpServletRequest request, HttpServletResponse response) {
+//        List<CustomerType> customerTypeList = customerTypeService.selectAll();
+//        request.setAttribute("customerTypeList", customerTypeList);
         RequestDispatcher dispatcher = request.getRequestDispatcher("view/create.jsp");
         try {
             dispatcher.forward(request, response);
