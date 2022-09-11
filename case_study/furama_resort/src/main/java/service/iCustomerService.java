@@ -9,7 +9,7 @@ import java.util.Map;
 public interface iCustomerService {
     public Map<String, String> add(Customer user);
 
-    public iCustomerService selectCustomer(int id);
+    public Customer selectCustomer(int id);
 
     public List<Customer> selectAll();
 
