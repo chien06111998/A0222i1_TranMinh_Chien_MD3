@@ -13,9 +13,9 @@
 </head>
 <body>
     <center>
-        <h1>User Management</h1>
+        <h1>Customer Management</h1>
         <h2>
-            <a href="/resort">List All Users</a>
+            <a href="/resort">List All Customer</a>
         </h2>
     </center>
     <div align="center">

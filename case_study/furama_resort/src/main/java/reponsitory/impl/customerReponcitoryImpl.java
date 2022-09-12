@@ -11,9 +11,10 @@ import java.util.List;
 public class customerReponcitoryImpl implements iCustomerReponcitory {
     private static final String INSERT_CUSTOMER_SQL = "insert into khach_hang (ma_hk, ho_ten, ngay_sinh, gioi_tinh, so_cmnd, so_dien_thoai, email, ma_loai_khach, dia_chi) values (?,?,?,?,?,?,?,?,?);";
     private static final String SELECT_ALL_CUSTOMER = "select * from khach_hang";
+    private final String SEARCH="call search(?,?,?);";
     private static final String SELECT_CUSTOMER_BY_ID = "select ma_hk,ho_ten,ngay_sinh,gioi_tinh, so_cmnd, so_dien_thoai, email, ma_loai_khach, dia_chi from khach_hang where ma_hk =?";
     private static final String DELETE_CUSTOMER_SQL = "delete from khach_hang where ma_hk = ?;";
-    private static final String UPDATE_CUSTOMER_SQL = "update khach_hang set ho_ten = ?, ngay_sinh = ?, gioi_tinh = ?, so_cmnd = ?, so_dien_thoai ?, email = ?, ma_loai_khach = ?, dia_chi =? where ma_hk = ?;";
+    private static final String UPDATE_CUSTOMER_SQL = "update khach_hang set ho_ten = ?, ngay_sinh = ?, gioi_tinh = ?, so_cmnd = ?, so_dien_thoai = ?, email = ?, ma_loai_khach = ?, dia_chi =? where ma_hk = ?;";
     @Override
     public void add(Customer customer) throws SQLException {
         Connection connection = BaseReponsitory.getConnectDB();
@@ -109,5 +110,34 @@ public class customerReponcitoryImpl implements iCustomerReponcitory {
             check = preparedStatement.executeUpdate() > 0;
         }
         return check;
+    }
+
+    @Override
+    public List<Customer> search(String id, String name, String customerType) {
+        List<Customer> customerList =new ArrayList<>();
+        Connection connection = BaseReponsitory.getConnectDB();
+        try {
+            CallableStatement callableStatement =connection.prepareCall(SEARCH);
+            callableStatement.setString(1, name);
+            callableStatement.setString(2, customerType);
+            callableStatement.setString(3, id);
+            ResultSet resultSet = callableStatement.executeQuery();
+            while (resultSet.next()) {
+                int idCustomer = resultSet.getInt("ma_hk");
+                String nameCustomer = resultSet.getString("ho_ten");
+                String birthday = resultSet.getString("ngay_sinh");
+                String gender = resultSet.getString("gioi_tinh");
+                String idCard = resultSet.getString("so_cmnd");
+                String phoneNumber = resultSet.getString("so_dien_thoai");
+                String email = resultSet.getString("email");
+                int customerTypeID = resultSet.getInt("ma_loai_khach");
+                String address = resultSet.getString("dia_chi");
+                Customer customer = new Customer(idCustomer, nameCustomer, birthday, gender, idCard, phoneNumber, email, customerTypeID, address);
+                customerList.add(customer);
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return customerList;
     }
 }

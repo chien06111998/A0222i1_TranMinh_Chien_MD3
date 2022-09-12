@@ -16,4 +16,6 @@ public interface iCustomerService {
     public boolean delete(int id) throws SQLException;
 
     public boolean update(Customer customer) throws SQLException;
+
+    List<Customer> search(String id, String name, String customerType);
 }

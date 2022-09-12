@@ -17,13 +17,15 @@
 <body>
     <center>
         <h1>customer</h1>
-        <a href="/index.jsp"></a>
-        <a href="/resort?action=create">Add New</a>
+        <a href="/index.jsp">Return home page.</a> <br>
+        <a href="/customer_type">Go to customer type list.</a> <br>
+        <a href="/resort?action=create">Add New</a> <br>
+        <a href="/resort?action=search">Search</a>
     </center>
     <c:if test="${mess!=null}">
         <span style="color: red">${mess}</span>
     </c:if>
-    <table class="table table-dark">
+    <table class="table table-dark" align="center">
         <thead>
         <tr>
             <th scope="col">ID</th>
@@ -48,16 +50,16 @@
                     <td><c:out value="${customer.idCard}"/></td>
                     <td><c:out value="${customer.phoneNumber}"/></td>
                     <td><c:out value="${customer.email}"/></td>
-<%--                    <c:forEach var="customerType" items="${customerTypeList}">--%>
-<%--                        <c:if test="${customer.customerTypeID == customerType.idCustomerType}">--%>
-<%--                            <td><c:out value="${customerType.nameCustomerType}"/></td>--%>
-<%--                        </c:if>--%>
-<%--                    </c:forEach>--%>
-                    <td><c:out value="${customer.customerTypeID}"/></td>
+                     <c:forEach var="customerType" items="${customerTypeList}">
+                        <c:if test="${customer.customerTypeID == customerType.idCustomerType}">
+                          <td><c:out value="${customerType.nameCustomerType}"/></td>
+                        </c:if>
+                     </c:forEach>
+<%--                    <td><c:out value="${customer.customerTypeID}"/></td>--%>
                     <td><c:out value="${customer.address}"/></td>
 
-                    <td><button type="button"><a href="/resort?action=update&id=${customer.id}">Edit</a></button></td>
-                    <td><button type="button" onclick="deleteInfo('${customer.id}','${customer.name}')" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    <td><button type="button"><a href="/resort?action=update&id=${customer.id}" class="btn btn-primary">Edit</a></button>
+                    <button type="button" onclick="deleteInfo('${customer.id}','${customer.name}')" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                         Delete
                     </button></td>
 
@@ -72,7 +74,6 @@
             <form action="/resort?action=delete" method="post">
             <div class="modal-content">
                 <div class="modal-header">
-
                     <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>

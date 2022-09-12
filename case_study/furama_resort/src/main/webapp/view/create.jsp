@@ -1,4 +1,3 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: PC
@@ -7,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
     <title>Title</title>
@@ -19,7 +19,7 @@
         </h2>
     </center>
     <c:if test="${mess!=null}">
-        <p style="color: red">${mess}</p>
+        <span style="color: red">${mess}</span>
     </c:if>
     <div align="center">
         <form action="/resort?action=create" method="post">
@@ -69,18 +69,17 @@
                     </td>
                 </tr>
                 <tr>
-                    <th>Customer type Id:</th>
-<%--                    <td>--%>
-<%--                        <select name="customerTypeId">--%>
-<%--                            <c:forEach var="customerType" items="${customerTypeList}">--%>
-<%--                                <option value="${customerType.idCustomerType}">${customerType.nameCustomerType}</option>--%>
-<%--                            </c:forEach>--%>
-<%--                        </select>--%>
-<%--                    </td>--%>
-                    <th>Customer type Id:</th>
+                    <th>Customer type:</th>
                     <td>
-                        <input type="text" name="customerTypeId" id="customerTypeId" size="15"/>
+                        <select name="customerTypeId">
+                            <c:forEach var="customerType" items="${customerTypeList}">
+                                <option value="${customerType.idCustomerType}">${customerType.nameCustomerType}</option>
+                            </c:forEach>
+                        </select>
                     </td>
+<%--                    <td>--%>
+<%--                        <input type="text" name="customerTypeId" id="customerTypeId" size="15"/>--%>
+<%--                    </td>--%>
                 </tr>
                 <tr>
                     <th>Address:</th>

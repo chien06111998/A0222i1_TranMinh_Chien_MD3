@@ -1,11 +1,15 @@
 package service.impl;
 
 import model.Customer;
+import reponsitory.BaseReponsitory;
 import reponsitory.iCustomerReponcitory;
 import reponsitory.impl.customerReponcitoryImpl;
 import service.iCustomerService;
 
+import java.sql.CallableStatement;
+import java.sql.Connection;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -47,5 +51,10 @@ public class customerServiceImpl implements iCustomerService {
     @Override
     public boolean update(Customer customer) throws SQLException {
         return customerReponcitory.update(customer);
+    }
+
+    @Override
+    public List<Customer> search(String id, String name, String customerType) {
+        return customerReponcitory.search(id, name, customerType);
     }
 }
