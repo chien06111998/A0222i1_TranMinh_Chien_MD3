@@ -21,6 +21,7 @@ public class customerServiceImpl implements iCustomerService {
     @Override
     public Map<String, String> add(Customer customer) {
         Map<String, String> map = new HashMap<>();
+//        validate
         if (customer.getId()<0){
             map.put("id","Id must be a positive integer");
         }
@@ -38,7 +39,7 @@ public class customerServiceImpl implements iCustomerService {
         if (!validation.checkIdCard(customer.getIdCard())) {
             map.put("idCard", "Id card invalidate.");
         }
-
+//
         if (map.isEmpty()) {
             try {
                 customerReponcitory.add(customer);

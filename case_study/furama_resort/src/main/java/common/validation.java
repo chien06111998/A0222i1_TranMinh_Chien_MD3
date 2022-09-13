@@ -14,9 +14,8 @@ public class validation {
         String regIdCard = "(^\\d{10}||\\d{12})$";
         return phone.matches(regIdCard);
     }
-    // them
-    public static boolean checkCustomeTypeId(String idGround) {
-        String regIdGround = "^CT-[0-9]{4}$"; // = CT-1234
-        return idGround.matches(regIdGround);
+    public static boolean checkIdContract(String idContract) {
+        String regIdGround = "^HD-[0-9]{2}$"; // = HD-12
+        return idContract.matches(regIdGround);
     }
 }

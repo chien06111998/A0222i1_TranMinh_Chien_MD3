@@ -19,6 +19,7 @@
         <h1>customer</h1>
         <a href="/index.jsp">Return home page.</a> <br>
         <a href="/customer_type">Go to customer type list.</a> <br>
+        <a href="/contract">Go to contract list.</a> <br>
         <a href="/resort?action=create">Add New</a> <br>
         <a href="/resort?action=search">Search</a>
     </center>
