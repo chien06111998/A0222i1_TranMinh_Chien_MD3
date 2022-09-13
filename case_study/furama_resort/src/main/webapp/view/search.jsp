@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
     <title>Title</title>
@@ -23,7 +24,7 @@
     <input type="text" name="nameCustomer" value="${nameCustomer}" placeholder="Enter name">
     <input type="text" name="idCustomer" value="${idCustomer}" placeholder="Enter id">
     <select name="idCustomerType">
-        <option value="">Customer Type</option>
+<%--        <option value="">Customer Type</option>--%>
         <c:forEach var="customerType" items="${customerTypeList}">
             <option value="${customerType.idCustomerType}">${customerType.nameCustomerType}</option>
         </c:forEach>

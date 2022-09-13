@@ -1,5 +1,6 @@
 package service.impl;
 
+import common.validation;
 import model.Customer;
 import reponsitory.BaseReponsitory;
 import reponsitory.iCustomerReponcitory;
@@ -20,9 +21,24 @@ public class customerServiceImpl implements iCustomerService {
     @Override
     public Map<String, String> add(Customer customer) {
         Map<String, String> map = new HashMap<>();
-//        if ("".equals(user.getEmail())) {
-//            map.put("email", "Email khong duoc de trong");
-//        }
+        if (customer.getId()<0){
+            map.put("id","Id must be a positive integer");
+        }
+        if ("".equals(customer.getEmail())) {
+            map.put("email", "Email cannot be empty.");
+        } else if (!validation.checkEmail(customer.getEmail())) {
+            map.put("email", "Email invalidate.");
+        }
+        if ("".equals(customer.getName())) {
+            map.put("name", "Name cannot be empty.");
+        }
+        if (!validation.checkPhoneNumber(customer.getPhoneNumber())) {
+            map.put("phoneNumber", "Phone number invalidate.");
+        }
+        if (!validation.checkIdCard(customer.getIdCard())) {
+            map.put("idCard", "Id card invalidate.");
+        }
+
         if (map.isEmpty()) {
             try {
                 customerReponcitory.add(customer);

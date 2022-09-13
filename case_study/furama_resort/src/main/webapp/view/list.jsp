@@ -86,7 +86,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary">Yes</button>
+                    <button type="submit" class="btn btn-primary" onclick="showAlert()">Yes</button>
                 </div>
             </div>
             </form>
@@ -96,6 +96,10 @@
         function deleteInfo(id,name) {
             document.getElementById("deleteId").value=id;
             document.getElementById("deleteName").innerText=name;
+        }
+        function showAlert() {
+            var message = "Delete success.";
+            alert(message);
         }
     </script>
 </body>

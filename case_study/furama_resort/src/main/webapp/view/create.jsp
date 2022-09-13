@@ -18,9 +18,9 @@
             <a href="/resort">List All Customer</a>
         </h2>
     </center>
-    <c:if test="${mess!=null}">
-        <span style="color: red">${mess}</span>
-    </c:if>
+<%--    <c:if test="${mess!=null}">--%>
+<%--        <span style="color: red">${mess}</span>--%>
+<%--    </c:if>--%>
     <div align="center">
         <form action="/resort?action=create" method="post">
             <table border="1" cellpadding="5">
@@ -31,11 +31,17 @@
                     <th>Id:</th>
                     <td>
                         <input type="text" name="id" id="id" size="45"/>
+                        <c:if test="${error!=null}">
+                            <span style="color: red">${error.get("id")}</span>
+                        </c:if>
                     </td>
                 </tr><tr>
                     <th>Name:</th>
                     <td>
                         <input type="text" name="name" id="name" size="45"/>
+                        <c:if test="${error!=null}">
+                            <span style="color: red">${error.get("name")}</span>
+                        </c:if>
                     </td>
                 </tr>
                 <tr>
@@ -54,18 +60,27 @@
                     <th>Id card:</th>
                     <td>
                         <input type="text" name="idCard" id="idCard" size="15"/>
+                        <c:if test="${error!=null}">
+                            <span style="color: red">${error.get("idCard")}</span>
+                        </c:if>
                     </td>
                 </tr>
                 <tr>
                     <th>Phone number:</th>
                     <td>
-                        <input type="text" name="phoneNumber" id="phoneNumber" size="15"/>
+                        <input type="text" name="phoneNumber" id="phoneNumber" size="15"/> <br>
+                        <c:if test="${error!=null}">
+                            <span style="color: red">${error.get("phoneNumber")}</span>
+                        </c:if>
                     </td>
                 </tr>
                 <tr>
                     <th>Email:</th>
                     <td>
-                        <input type="text" name="email" id="email" size="15"/>
+                        <input type="text" name="email" id="email" size="15"/> <br>
+                        <c:if test="${error!=null}">
+                            <span style="color: red">${error.get("email")}</span>
+                        </c:if>
                     </td>
                 </tr>
                 <tr>
@@ -77,9 +92,6 @@
                             </c:forEach>
                         </select>
                     </td>
-<%--                    <td>--%>
-<%--                        <input type="text" name="customerTypeId" id="customerTypeId" size="15"/>--%>
-<%--                    </td>--%>
                 </tr>
                 <tr>
                     <th>Address:</th>
@@ -88,12 +100,21 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2" align="center">
+                    <td colspan="2" align="center" onclick="showAlertSuccess()">
                         <input type="submit" value="Save"/>
                     </td>
+<%--                    <td colspan="2" align="center">--%>
+<%--                        <input type="submit" value="Save"/>--%>
+<%--                    </td>--%>
                 </tr>
             </table>
         </form>
     </div>
 </body>
 </html>
+<script>
+    function showAlertSuccess() {
+        var messageSuccess = "Create success.";
+        alert(messageSuccess);
+    }
+</script>

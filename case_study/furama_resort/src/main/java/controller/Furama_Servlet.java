@@ -113,6 +113,11 @@ public class Furama_Servlet extends HttpServlet {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        try {
+            response.sendRedirect("/resort");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
     private void addNew(HttpServletRequest request, HttpServletResponse response) {
         int id = Integer.parseInt(request.getParameter("id"));
@@ -126,12 +131,21 @@ public class Furama_Servlet extends HttpServlet {
         String address = request.getParameter("address");
         Customer customer = new Customer(id, name, birthDay, gender, idCard, phoneNumber, email, customerTypeId, address);
         Map<String, String> map = customerService.add(customer);
-        String mess ="them moi  thanh cong";
+//        String mess ="them moi  thanh cong";
+        boolean mess = true;
         if (!map.isEmpty()){
-            mess="Them moi khong thanh cong";
+            mess = false;
             request.setAttribute("error",map);
         }
         request.setAttribute("mess", mess);
+        RequestDispatcher requestDispatcher =request.getRequestDispatcher("view/create.jsp");
+        try {
+            requestDispatcher.forward(request, response);
+        } catch (ServletException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         try {
             response.sendRedirect("/resort");
         } catch (IOException e) {
@@ -185,7 +199,7 @@ public class Furama_Servlet extends HttpServlet {
     }
 
     private void showFormUpdate(HttpServletRequest request, HttpServletResponse response) {
-        int id = Integer.parseInt(request.getParameter("idCustomerType"));
+        int id = Integer.parseInt(request.getParameter("id"));
         Customer customer = customerService.selectCustomer(id);
         RequestDispatcher dispatcher = request.getRequestDispatcher("view/update.jsp");
         request.setAttribute("customerList", customer);
