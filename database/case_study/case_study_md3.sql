@@ -32,18 +32,23 @@ create table loai_khach(
 	ma_loai_khach int primary key,
     ten_loai_khach varchar(45)
 );
+
+
 create table khach_hang(
 	ma_hk int primary key,
     ma_loai_khach int,
     ho_ten varchar(45),
     ngay_sinh date,
-    gioi_tinh bit,
+    gioi_tinh varchar(20),
     so_cmnd varchar(45),
     so_dien_thoai varchar(45),
     email varchar(45),
     dia_chi varchar(45),
     foreign key(ma_loai_khach) references loai_khach(ma_loai_khach)
 );
+select * from khach_hang;
+
+
 create table loai_dich_vu(
 	ma_loai_dich_vu int primary key,
     ten_loai_dich_vu varchar(45)

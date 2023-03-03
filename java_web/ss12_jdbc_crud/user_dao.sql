@@ -8,7 +8,7 @@ create table users (
  country varchar(120),
  PRIMARY KEY (id)
 );
-
+delete from users where id = 2;
 select * from users;
 select id from users;
 -- insert into users(name, email, country) values('Minh','minh@codegym.vn','Viet Nam');

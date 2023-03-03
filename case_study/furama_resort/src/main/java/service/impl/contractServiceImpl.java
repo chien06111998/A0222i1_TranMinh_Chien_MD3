@@ -2,7 +2,6 @@ package service.impl;
 
 import common.validation;
 import model.Contract;
-import model.Customer;
 import reponsitory.iContractRepocitory;
 import reponsitory.impl.contractRepocitoryImpl;
 import service.iContractService;
@@ -14,7 +13,6 @@ import java.util.Map;
 
 public class contractServiceImpl implements iContractService {
     private iContractRepocitory contractRepocitory = new contractRepocitoryImpl();
-
     @Override
     public Map<String, String> add(Contract contract) {
         Map<String, String> map = new HashMap<>();
@@ -29,6 +27,9 @@ public class contractServiceImpl implements iContractService {
         }
         if (contract.getTotalMoney() < 0) {
             map.put("totalMoney","Total money must be a positive integer");
+        }
+        if (!validation.checkDate(contract.getStartDate(), contract.getEndDate())) {
+            map.put("endDate", "The start date must be greater than the end date.\n");
         }
 
         if (map.isEmpty()) {

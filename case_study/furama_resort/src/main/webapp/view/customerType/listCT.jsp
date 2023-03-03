@@ -35,7 +35,7 @@
                     <td><c:out value="${customerType.idCustomerType}"/></td>
                     <td><c:out value="${customerType.nameCustomerType}"/></td>
                     <td>
-                        <button type="button"><a href="/customer_type?action=update&id=${customerType.idCustomerType}" class="btn btn-primary">Edit</a></button>
+                        <button type="button"><a href="/customer_type?action=update&id=${customerType.idCustomerType}" class="btn btn-primary>Edit</a></button>
                         <button type="button" onclick="deleteInfo('${customerType.idCustomerType}','${customerType.nameCustomerType}')" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                             Delete
                         </button>

@@ -42,6 +42,9 @@
                     <th>End Day:</th>
                     <td>
                         <input type="date" name="endDate" id="endDate" size="45"/>
+                        <c:if test="${error!=null}">
+                            <span style="color: red">${error.get("endDate")}</span>
+                        </c:if>
                     </td>
                 </tr>
                 <tr>

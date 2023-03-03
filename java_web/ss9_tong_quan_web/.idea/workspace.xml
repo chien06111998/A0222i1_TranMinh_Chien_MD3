@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="36364983-6128-48fc-84eb-3166f4cf5678" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../css/ss7_bo_cuc_trang_web/layout_rwd/.idea/layout_rwd.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../css/ss8_boostrap/gallery/.idea/gallery.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_final_exam/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_final_exam/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_final_exam/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_final_exam/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_final_exam/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_final_exam/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_final_exam/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_final_exam/src/main/java/controller/MatBangServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_final_exam/src/main/java/model/MatBang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_final_exam/src/main/java/model/Note.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_final_exam/src/main/java/model/Type.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_final_exam/src/main/java/reponcitory/BaseReponcitory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_final_exam/src/main/java/reponcitory/iMatBangRp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_final_exam/src/main/java/reponcitory/iType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_final_exam/src/main/java/reponcitory/impl/matBangRpImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_final_exam/src/main/java/reponcitory/impl/noteRpImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_final_exam/src/main/java/reponcitory/impl/typeRpImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_final_exam/src/main/java/service/iMatBangSr.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_final_exam/src/main/java/service/iTypeSr.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_final_exam/src/main/java/service/impl/matBangSvImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_final_exam/src/main/java/service/impl/noteSvImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_final_exam/src/main/java/service/impl/typeSvImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_final_exam/src/main/java/utils/validation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_final_exam/src/main/webapp/view/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_final_exam/src/main/webapp/view/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_final_exam/src/main/webapp/view/search.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_final_exam/src/main/webapp/view/update.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../final_exam_module3/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../final_exam_module3/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../final_exam_module3/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../final_exam_module3/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../final_exam_module3/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../final_exam_module3/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../final_exam_module3/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../final_exam_module3/src/main/java/controller/MatBangServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../final_exam_module3/src/main/java/model/MatBang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../final_exam_module3/src/main/java/reponcitory/BaseReponcitory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../final_exam_module3/src/main/java/reponcitory/iMatBang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../final_exam_module3/src/main/java/reponcitory/impl/matBangImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../final_exam_module3/src/main/java/service/iMatBangService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../final_exam_module3/src/main/java/service/impl/matBangServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../final_exam_module3/src/main/java/ultis/Validation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../final_exam_module3/src/main/webapp/bootstrap-4.1.3-dist/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../final_exam_module3/src/main/webapp/bootstrap-4.1.3-dist/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../final_exam_module3/src/main/webapp/bootstrap-4.1.3-dist/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../final_exam_module3/src/main/webapp/bootstrap-4.1.3-dist/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../final_exam_module3/src/main/webapp/bootstrap-4.1.3-dist/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../final_exam_module3/src/main/webapp/bootstrap-4.1.3-dist/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../final_exam_module3/src/main/webapp/bootstrap-4.1.3-dist/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../final_exam_module3/src/main/webapp/bootstrap-4.1.3-dist/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../final_exam_module3/src/main/webapp/bootstrap-4.1.3-dist/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../final_exam_module3/src/main/webapp/bootstrap-4.1.3-dist/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../final_exam_module3/src/main/webapp/bootstrap-4.1.3-dist/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../final_exam_module3/src/main/webapp/bootstrap-4.1.3-dist/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../final_exam_module3/src/main/webapp/bootstrap-4.1.3-dist/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../final_exam_module3/src/main/webapp/bootstrap-4.1.3-dist/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../final_exam_module3/src/main/webapp/bootstrap-4.1.3-dist/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../final_exam_module3/src/main/webapp/bootstrap-4.1.3-dist/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../final_exam_module3/src/main/webapp/bootstrap-4.1.3-dist/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../final_exam_module3/src/main/webapp/bootstrap-4.1.3-dist/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../final_exam_module3/src/main/webapp/bootstrap-4.1.3-dist/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../final_exam_module3/src/main/webapp/bootstrap-4.1.3-dist/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../final_exam_module3/src/main/webapp/view/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../final_exam_module3/src/main/webapp/view/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../final_exam_module3/src/main/webapp/view/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../final_exam_module3/src/main/webapp/view/search.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../thi_module_3/exam_module3/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../thi_module_3/exam_module3/src/main/java/controller/MainServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../thi_module_3/exam_module3/src/main/java/model/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../thi_module_3/exam_module3/src/main/java/model/Second.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../thi_module_3/exam_module3/src/main/java/reponcitory/BaseReponcitory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../thi_module_3/exam_module3/src/main/java/reponcitory/iMainReponcitory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../thi_module_3/exam_module3/src/main/java/reponcitory/iSeconReponcitory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../thi_module_3/exam_module3/src/main/java/reponcitory/impl/mainRepocitoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../thi_module_3/exam_module3/src/main/java/reponcitory/impl/seconRepocitoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../thi_module_3/exam_module3/src/main/java/service/iMainService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../thi_module_3/exam_module3/src/main/java/service/iSeconService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../thi_module_3/exam_module3/src/main/java/service/impl/mainServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../thi_module_3/exam_module3/src/main/java/service/impl/seconServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../thi_module_3/exam_module3/src/main/java/ultis/validation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../thi_module_3/exam_module3/src/main/webapp/view/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../thi_module_3/exam_module3/src/main/webapp/view/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../thi_module_3/exam_module3/src/main/webapp/view/search.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../thi_module_3/exam_module3/src/main/webapp/view/update.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../untitled/.idea/untitled.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../case_study/furama_resort/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../case_study/furama_resort/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../case_study/furama_resort/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../case_study/furama_resort/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../case_study/furama_resort/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../case_study/furama_resort/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../case_study/furama_resort/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../case_study/furama_resort/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../case_study/furama_resort/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../case_study/furama_resort/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../case_study/furama_resort/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../case_study/furama_resort/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../case_study/furama_resort/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../case_study/furama_resort/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../case_study/furama_resort/build/classes/java/main/common/validation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../case_study/furama_resort/build/classes/java/main/common/validation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../case_study/furama_resort/build/classes/java/main/config/FilterUTF8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../case_study/furama_resort/build/classes/java/main/service/impl/contractServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../case_study/furama_resort/build/classes/java/main/service/impl/contractServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../case_study/furama_resort/build/libs/furama_resort-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../case_study/furama_resort/build/libs/furama_resort-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../case_study/furama_resort/src/main/java/common/validation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../case_study/furama_resort/src/main/java/common/validation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../case_study/furama_resort/src/main/java/config/FilterUTF8.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../case_study/furama_resort/src/main/java/config/FilterUTF8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../case_study/furama_resort/src/main/java/service/impl/contractServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../case_study/furama_resort/src/main/java/service/impl/contractServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../case_study/furama_resort/src/main/webapp/view/contract/createC.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../case_study/furama_resort/src/main/webapp/view/contract/createC.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../case_study/furama_resort/src/main/webapp/view/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../case_study/furama_resort/src/main/webapp/view/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../case_study/furama_resort/src/main/webapp/view/customerType/listCT.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../case_study/furama_resort/src/main/webapp/view/customerType/listCT.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../css/ss7_bo_cuc_trang_web/layout_rwd/rwd.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../css/ss7_bo_cuc_trang_web/layout_rwd/rwd.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../database/case_study/case_study_md3.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../database/case_study/case_study_md3.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss12_jdbc_crud/user_dao.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../ss12_jdbc_crud/user_dao.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../untitled/demo.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.1\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2LxCexwsy2oTVbEo5KuTAu05rqq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="36364983-6128-48fc-84eb-3166f4cf5678" name="Default Changelist" comment="" />
+      <created>1676803446479</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1676803446479</updated>
+      <workItem from="1676803447591" duration="377000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -18,9 +18,9 @@
             <a href="/resort">List All Customer</a>
         </h2>
     </center>
-<%--    <c:if test="${mess!=null}">--%>
-<%--        <span style="color: red">${mess}</span>--%>
-<%--    </c:if>--%>
+    <c:if test="${mess!=null}">
+        <span style="color: red">${mess}</span>
+    </c:if>
     <div align="center">
         <form action="/resort?action=create" method="post">
             <table border="1" cellpadding="5">
